@@ -15,7 +15,6 @@ int	main(int argc, char **argv)
 {
 	int		i;
 	int		n;
-//	char	c;
 
 	n = 1;
 	i = 0;

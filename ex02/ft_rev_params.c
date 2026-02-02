@@ -17,12 +17,11 @@ int	main(int argc, char **argv)
 	int	i;
 	int	n;
 	int	a;
-//	char	c;
 
 	n = 1;
 	i = 0;
 	a = 0;
-	while(n < argc)
+	while (n < argc)
 	{
 		a++;
 		n++;
@@ -40,5 +39,4 @@ int	main(int argc, char **argv)
 		write(1, "\n", 1);
 		n++;
 	}
-	return (0);
 }
