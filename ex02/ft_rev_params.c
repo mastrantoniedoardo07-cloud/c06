@@ -15,28 +15,23 @@
 int	main(int argc, char **argv)
 {
 	int	i;
-	int	n;
 	int	a;
 
-	n = 1;
-	i = 0;
 	a = 0;
-	while (n < argc)
+	i = argc - 1;
+	if (argc >= 1)
 	{
-		a++;
-		n++;
-	}
-	n = 1;
-	while (n < argc)
-	{
-		i = 0;
-		while (argv[n][i])
+		while (i > 0)
 		{
-			write(1, &argv[a][i], 1);
-			i++;
+			a = 0;
+			while(argv[i][a])
+			{
+				write(1, &argv[i][a], 1);
+				a++;
+			}
+			write(1, "\n", 1);
+			i--;
 		}
-		a--;
-		write(1, "\n", 1);
-		n++;
 	}
+	return (0);
 }

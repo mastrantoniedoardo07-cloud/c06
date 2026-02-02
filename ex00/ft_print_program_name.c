@@ -25,5 +25,6 @@ int	main(int argc, char **argv)
 			write(1, &c, 1);
 			i++;
 		}
+		write(1, "\n", 1);
 	}
 }
